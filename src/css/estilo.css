@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background-image: url(../imagens/bg-repeat.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.duvidas {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.conteudo {
+  color: #fff;
+  align-self: center;
+}
+
+.conteudo h1 {
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.conteudo p {
+  font-size: 1.5rem;
+  max-width: 35ch;
+}
+
+.formulario {
+  display: grid;
+  background-color: #fff;
+  padding: 20px;
+  width: 340px;
+}
+
+.formulario div {
+  margin-bottom: 15px;
+}
+
+.formulario .campo {
+  height: 35px;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.formulario .campo::placeholder {
+  color: #a8a8a8;
+  font-family: "roboto";
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.formulario textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.formulario > p {
+  color: #000;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #3ccc87;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.formulario .obrigatorio {
+  font-size: 0.8rem;
+  color: #f52e2e;
+  position: absolute;
+  display: none;
+}
+
+.formulario .camponulo {
+  border: 1px solid #f52e2e;
+}
+.formulario .obrigatorio.nulo {
+  display: block;
+}
+
+.formulario .campo.preenchido {
+  border: 1px solid #00c22b;
+}
+
+@media (max-width: 700px) {
+  .duvidas {
+    display: grid;
+    gap: 30px;
+    margin: 20px;
+    align-content: start;
+  }
+  .conteudo h1 {
+    padding-bottom: 6px;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .conteudo p {
+    font-size: 1.2rem;
+    max-width: none;
+  }
+
+  .formulario {
+    display: grid;
+    background-color: #fff;
+    padding: 15px;
+    width: 340px;
+  }
+  .formulario {
+    width: 100%;
+  }
+
+  .formulario div {
+    margin-bottom: 8px;
+  }
+
+  .formulario .campo {
+    height: 30px;
+    padding: 4px 8px;
+    width: 100%;
+  }
+
+  .formulario .campo::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .formulario textarea {
+    min-height: 80px;
+  }
+
+  .formulario > p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 1.2rem;
+  }
+}
